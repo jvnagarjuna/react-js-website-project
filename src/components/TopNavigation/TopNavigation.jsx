@@ -9,14 +9,23 @@ class TopNavigation extends Component {
     this.state = {
       navBarTitle: 'navTitle',
       navBarLogo: [whiteLogo], // object
+      navBarBack: 'navBackground',
     };
   }
 
   onScroll = () => {
     if (window.scrollY > 100) {
-      this.setState({ navBarTitle: 'navTitleScroll', navBarLogo: [blackLogo] });
+      this.setState({
+        navBarTitle: 'navTitleScroll',
+        navBarLogo: [blackLogo],
+        navBarBack: 'navBackgroundScroll',
+      });
     } else if (window.scrollY < 100) {
-      this.setState({ navBarTitle: 'navTitle', navBarLogo: [whiteLogo] });
+      this.setState({
+        navBarTitle: 'navTitle',
+        navBarLogo: [whiteLogo],
+        navBarBack: 'navBackground',
+      });
     }
   };
 
@@ -28,10 +37,10 @@ class TopNavigation extends Component {
     return (
       <Fragment>
         <Navbar
+          className={this.state.navBarBack}
           collapseOnSelect
           fixed="top"
           expand="lg"
-          bg="dark"
           variant="dark"
         >
           <Navbar.Brand className={this.state.navBarTitle} href="#home">
