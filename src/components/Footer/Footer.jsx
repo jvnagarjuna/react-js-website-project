@@ -43,17 +43,17 @@ class Footer extends Component {
 
             <Col lg="3" md={6} sm={12} className="p-5 text-justify">
               <h2 className="footerName">Information </h2>
-              <a className="footerLink" href="#">
+              <Link className="footerLink" to="/about">
                 About Me{' '}
-              </a>{' '}
+              </Link>{' '}
               <br></br>
-              <a className="footerLink" href="#">
+              <Link className="footerLink" to="/about">
                 Company Profile{' '}
-              </a>{' '}
+              </Link>{' '}
               <br></br>
-              <a className="footerLink" href="#">
+              <Link className="footerLink" to="/contact">
                 Contact Us{' '}
-              </a>{' '}
+              </Link>{' '}
               <br></br>
             </Col>
 
@@ -67,9 +67,9 @@ class Footer extends Component {
                 Trems And Condition{' '}
               </Link>{' '}
               <br></br>
-              <a className="footerLink" href="#">
-                Privaci Policy{' '}
-              </a>{' '}
+              <Link className="footerLink" to="/privacy">
+                Privacy And Policy{' '}
+              </Link>{' '}
               <br></br>
             </Col>
           </Row>
