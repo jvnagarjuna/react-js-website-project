@@ -11,6 +11,7 @@ class TopNavigation extends Component {
     this.state = {
       navBarTitle: 'navTitle',
       navBarLogo: [whiteLogo], // object
+      navVariant: 'dark',
       navBarBack: 'navBackground',
       navBarItem: 'navItem',
     };
@@ -23,6 +24,7 @@ class TopNavigation extends Component {
         navBarLogo: [blackLogo],
         navBarBack: 'navBackgroundScroll',
         navBarItem: 'navItemScroll',
+        navVariant: 'light',
       });
     } else if (window.scrollY < 100) {
       this.setState({
@@ -30,6 +32,7 @@ class TopNavigation extends Component {
         navBarLogo: [whiteLogo],
         navBarBack: 'navBackground',
         navBarItem: 'navItem',
+        navVariant: 'dark',
       });
     }
   };
@@ -46,7 +49,7 @@ class TopNavigation extends Component {
           collapseOnSelect
           fixed="top"
           expand="lg"
-          variant="dark"
+          variant={this.state.navVariant}
         >
           <Navbar.Brand className={this.state.navBarTitle} href="#home">
             {' '}
