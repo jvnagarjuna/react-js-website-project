@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class AllCourses extends Component {
   render() {
@@ -24,9 +25,12 @@ class AllCourses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/coursedetails"
+                  >
                     View Details
-                  </a>
+                  </Link>
                 </Col>
 
                 <Col lg={6} md={6} sm={12} className="p-2">
@@ -42,9 +46,12 @@ class AllCourses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/coursedetails"
+                  >
                     View Details
-                  </a>
+                  </Link>
                 </Col>
 
                 <Col lg={6} md={6} sm={12} className="p-2">
@@ -60,9 +67,12 @@ class AllCourses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/coursedetails"
+                  >
                     View Details
-                  </a>
+                  </Link>
                 </Col>
               </Row>
             </Col>
@@ -82,9 +92,12 @@ class AllCourses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/coursedetails"
+                  >
                     View Details
-                  </a>
+                  </Link>
                 </Col>
 
                 <Col lg={6} md={6} sm={12} className="p-2">
@@ -100,9 +113,12 @@ class AllCourses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/coursedetails"
+                  >
                     View Details
-                  </a>
+                  </Link>
                 </Col>
 
                 <Col lg={6} md={6} sm={12} className="p-2">
@@ -118,9 +134,12 @@ class AllCourses extends Component {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a className="courseViewMore float-left" href="#">
+                  <Link
+                    className="courseViewMore float-left"
+                    to="/coursedetails"
+                  >
                     View Details
-                  </a>
+                  </Link>
                 </Col>
               </Row>
             </Col>
