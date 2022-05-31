@@ -54,9 +54,11 @@ class TopNavigation extends Component {
           expand="lg"
           variant={this.state.navVariant}
         >
-          <Navbar.Brand className={this.state.navBarTitle} href="#home">
-            {' '}
-            <img src={this.state.navBarLogo} />{' '}
+          <Navbar.Brand className={this.state.navBarTitle}>
+            <NavLink to="/">
+              {' '}
+              <img src={this.state.navBarLogo} />{' '}
+            </NavLink>{' '}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
