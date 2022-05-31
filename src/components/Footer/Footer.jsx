@@ -63,9 +63,9 @@ class Footer extends Component {
                 Refund Policy{' '}
               </Link>{' '}
               <br></br>
-              <a className="footerLink" href="#">
+              <Link className="footerLink" to="/trems">
                 Trems And Condition{' '}
-              </a>{' '}
+              </Link>{' '}
               <br></br>
               <a className="footerLink" href="#">
                 Privaci Policy{' '}
