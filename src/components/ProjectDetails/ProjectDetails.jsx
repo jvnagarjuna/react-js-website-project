@@ -5,6 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 
 class ProjectDetails extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      MyProjectId: props.id,
+    };
+  }
+
   render() {
     return (
       <Fragment>
@@ -19,7 +26,8 @@ class ProjectDetails extends Component {
             <Col lg={6} md={6} sm={12} className="mt-5">
               <div className="project-details">
                 <h1 className="projectDetailsText">
-                  Education in continuing a proud tradition.
+                  {' '}
+                  {this.state.MyProjectId}{' '}
                 </h1>
                 <p className="detailsName">
                   The quick, brown fox jumps over a lazy dog. DJs flock by when
