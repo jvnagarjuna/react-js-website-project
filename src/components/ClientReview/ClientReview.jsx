@@ -65,8 +65,8 @@ class ClientReview extends Component {
     const MyView = MyList.map((MyList) => {
       return (
         <div>
-          <Row className="text-center justify-content-center">
-            <Col lg={6} md={6} sm={12}>
+          <Row className="text-center justify-content-center" key={MyList.id}>
+            <Col lg={6} md={6} sm={12} key={MyList.id}>
               <img className="circleImg" src={MyList.client_img} />
               <h2 className="reviewName">{MyList.client_title}</h2>
               <p className="reviewDescription">{MyList.client_description}</p>

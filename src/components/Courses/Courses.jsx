@@ -22,7 +22,7 @@ class Courses extends Component {
     const MyList = this.state.myData;
     const MyView = MyList.map((MyList) => {
       return (
-        <Col lg={6} md={12} sm={12}>
+        <Col lg={6} md={12} sm={12} key={MyList.id}>
           <Row>
             <Col lg={6} md={6} sm={12} className="p-2">
               <img className="courseImg" src={MyList.small_img} />
