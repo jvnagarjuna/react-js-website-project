@@ -33,7 +33,10 @@ class RecentProject extends Component {
                 {MyList.project_description}
               </Card.Text>
               <Button variant="primary">
-                <Link className="link-style" to="/projectdetails">
+                <Link
+                  className="link-style"
+                  to={'/projectdetails/' + MyList.id}
+                >
                   {' '}
                   View More{' '}
                 </Link>{' '}
