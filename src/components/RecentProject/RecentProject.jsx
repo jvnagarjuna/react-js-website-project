@@ -22,7 +22,7 @@ class RecentProject extends Component {
     const MyList = this.state.myData;
     const MyView = MyList.map((MyList) => {
       return (
-        <Col lg={4} md={6} sm={12} key={MyList.id}>
+        <Col lg={4} md={6} sm={12}>
           <Card className="projectCard">
             <Card.Img variant="top" src={MyList.img_one} />
             <Card.Body>
