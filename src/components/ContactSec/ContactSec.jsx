@@ -31,6 +31,15 @@ class ContactSec extends Component {
     let email = document.getElementById('email').value;
     let message = document.getElementById('message').value;
     // alert(name+"/"+email+"/"+message);
+
+    let jsonObject = { name: name, email: email, message: message };
+    RestClient.PostRequest(AppUrl.ContactSend, JSON.stringify(jsonObject))
+      .then((result) => {
+        alert(result);
+      })
+      .catch((error) => {
+        alert('Error');
+      });
   }
 
   render() {
