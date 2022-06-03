@@ -30,7 +30,7 @@ class AppRouter extends Component {
 
           <Route
             exact
-            path="/projectdetails/:projectID"
+            path="/projectdetails/:projectID/:projectName"
             component={ProjectDetailPage}
           />
           <Route exact path="/coursedetails" component={CourseDetailsPage} />

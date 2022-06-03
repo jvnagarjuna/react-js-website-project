@@ -9,6 +9,7 @@ class ProjectDetailPage extends Component {
     super();
     this.state = {
       ProjectPassedID: match.params.projectID,
+      ProjectPassedName: match.params.projectName,
     };
   }
 
@@ -19,7 +20,7 @@ class ProjectDetailPage extends Component {
     return (
       <Fragment>
         <TopNavigation title="Project Details " />
-        <PageTop pagetitle="Project Details" />
+        <PageTop pagetitle={this.state.ProjectPassedName} />
         <ProjectDetails id={this.state.ProjectPassedID} />
         <Footer />
       </Fragment>

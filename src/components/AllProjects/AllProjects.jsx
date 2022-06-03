@@ -35,7 +35,9 @@ class AllProjects extends Component {
               <Button variant="primary">
                 <Link
                   className="link-style"
-                  to={'/projectdetails/' + MyList.id}
+                  to={
+                    '/projectdetails/' + MyList.id + '/' + MyList.project_name
+                  }
                 >
                   {' '}
                   View More{' '}
